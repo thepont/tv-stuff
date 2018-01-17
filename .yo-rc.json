@@ -1,0 +1,18 @@
+{
+  "generator-bigdatr-startr": {
+    "promptValues": {
+      "name": "tv-stuff",
+      "description": "stuff to display on a tv",
+      "version": "0.0.0",
+      "license": "UNLICENSED",
+      "private": false,
+      "author": "Paul Esson",
+      "username": "thepont",
+      "nameConstant": "TV_STUFF",
+      "nameKebab": "tv-stuff",
+      "port": 3000,
+      "cognito": false,
+      "segment": false
+    }
+  }
+}

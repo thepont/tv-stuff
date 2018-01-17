@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Cormorant+SC|Bungee+Shade|Fascinate+Inline|Fontdiner+Swanky|Pattaya');
+
+body {
+    background: grey;
+    filter: grayscale(100%) !important;
+}
+
+.newsItem {
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid #4D4D4D !important;
+    background: #333333
+    // background: white !important;
+    // font: "Pattaya" !important;
+}
+
+.song{
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid #4D4D4D !important;    
+    background: #333333
+}
+
+.albumArt {
+    height: 200px;
+    width: 200px;
+}
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    
+}
