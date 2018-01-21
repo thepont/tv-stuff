@@ -4,10 +4,11 @@ import React from 'react';
 import {
     Appear, BlockQuote, Cite, CodePane, Code, Deck, Fill, Fit,
     Heading, Image, Layout, ListItem, List, Quote, Slide, Text
-  } from 'spectacle'; 
+  } from 'spectacle';
 // import RssQuery from 'tv-stuff/entity/RssQuery';
 import {Provider} from 'react-redux';
 import styled from 'styled-components';
+import {CoreQueryHock} from '../entity/EntityApi';
 
 const PaperHeading = styled(Heading)`
   font-family: "Cormorant SC" !important;
@@ -44,7 +45,7 @@ class Feed extends React.Component {
     render(): React.Element<any> {
             return <Slide className="news">
                 <PaperHeading className="news">{this.props.rss.title}</PaperHeading>
-                
+
                 {this.props.rss.entries.map(ii => RssEntry(ii))}
             </Slide>;
     }
@@ -52,10 +53,12 @@ class Feed extends React.Component {
 
 export default Feed;
 // const withData = CoreQueryHock(props => {
+//     console.log('Calling With Data...')
 //     return {
 //         url: 'http://www.theage.com.au/rssheadlines/top.xml',
 //     };
 // }, ['feedUrl']);
 
 // export default withData(Feed);
+
 

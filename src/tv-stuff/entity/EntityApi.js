@@ -5,10 +5,11 @@ import {EntityApi} from 'enty';
 import ApplicationSchema from './EntitySchema';
 
 function getRss(url){
+    console.log('GetRss')
     return new Promise((resolve, reject) => {
         parser.parseURL(url, (err, result)=> {
             if(err) return reject(err);
-            return resolve(result);
+            return resolve({rss: result});
         })
     })
 }
