@@ -2,9 +2,8 @@ import React from 'react';
 import {
     Appear, BlockQuote, Cite, CodePane, Code, Deck, Fill, Fit,
     Heading, Image, Layout, ListItem, List, Quote, Slide, Text
-  } from 'spectacle'; 
+  } from 'spectacle';
 // import RssQuery from 'tv-stuff/entity/RssQuery';
-import {Provider} from 'react-redux';
 import styled from 'styled-components';
 
 const PlayingHeading = styled(Heading)`

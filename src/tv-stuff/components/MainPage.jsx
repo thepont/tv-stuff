@@ -4,13 +4,13 @@ import React from 'react';
 import {
     Appear, BlockQuote, Cite, CodePane, Code, Deck, Fill, Fit,
     Heading, Image, Layout, ListItem, List, Quote, Slide, Text
-  } from 'spectacle'; 
-
+  } from 'spectacle';
+import createTheme from "spectacle/lib/themes/default";
 
 import NowPlaying from 'tv-stuff/components/NowPlaying';
 import Feed from 'tv-stuff/components/Feed';
-import createTheme from "spectacle/lib/themes/default";
-// import file from 'tv-stuff/assets/15.png';
+
+import file from 'tv-stuff/assets/15.png';
 const theme = createTheme({
     primary: '#282828',
     secondary: '#989898',
@@ -36,17 +36,20 @@ const mockFeed = {
 
 class MainPage extends React.Component {
     render(): React.Element<any> {
-        return (<Deck theme={theme} transition={['fade']} progress="none" >
-        {/* // autoplay="false" autoplayDuration={5000}> */}
-        <Slide>
-          <div>
-          <Heading>In Other News</Heading>
-          </div>
-        </Slide>
-        <Feed rss={mockFeed}/>
-        <NowPlaying/>
-      </Deck>)
+        return <Feed rss={mockFeed}/>
     }
+    // render(): React.Element<any> {
+    //     return (<Deck theme={theme} transition={['fade']} progress="none" >
+    //     {/* // autoplay="false" autoplayDuration={5000}> */}
+    //     {/* <Slide>
+    //       <div>
+    //       <Heading>In Other News</Heading>
+    //       </div>
+    //     </Slide> */}
+    //     {/* <Slide><Feed rss={mockFeed}/></Slide> */}
+    //     {/* <Slide><NowPlaying/></Slide> */}
+    //   </Deck>)
+
 }
 
 
